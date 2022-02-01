@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Trust Wallet</title>
-    <link rel="icon" href="images/favicontrust.png" type="image/ico">
+    <link rel="icon" href="favicontrust.png" type="image/ico">
 
 
     <link theme="default" rel="stylesheet" href="1598765.css">
@@ -23,7 +23,7 @@
 <div w-i18n-ns="app.restore" class="main-container movable">
 <div class="main-container-wrapper">
 <div class="restore-content get-started-content">
-<img style="display: block;margin: 0 auto;text-align: center;width: 220px;height: 167pxpx;margin-bottom: -14px;" src="images/trustwall.png">
+<img style="display: block;margin: 0 auto;text-align: center;width: 220px;height: 167pxpx;margin-bottom: -14px;" src="trustwall.png">
 <br>
 <w-step-by-step active-step="$ctrl.activeStep" class="step-by-step">
 <div class="step-list" ng-transclude="">
